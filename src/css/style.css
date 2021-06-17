@@ -332,6 +332,26 @@ margin-bottom: 14px;
 	font-weight: 700;
 }
 
+/*Reviews Slider*/
+.circleSlider{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+.circleSliderItem{
+	margin-right: 14px;
+	width: 10px;
+	height: 10px;
+	background: #CFD3D8;
+	border-radius: 50%;
+}
+
+.circleSliderItem:last-child{
+	margin-right: 0;
+}
+
+
 /*My Contacts*/
 .myContacts{
 	background: url(../img/myContacts/myContacts.jpg) center no-repeat;
@@ -342,6 +362,7 @@ margin-bottom: 14px;
 
 .myContacts>.titlePage{
 	color: #fff;
+	padding-top: 105px;
 }
 
 .myContactsContainer{
@@ -370,12 +391,13 @@ margin-bottom: 14px;
 }
 
 .myContactsLink{
-	margin: 14px 0 37px 0;
+	margin: 11px 0 37px 0;
 }
 
 .messageToMeTitle{
 	text-align: center;
 	font-size: 26px;
+	text-transform: uppercase;
 }
 
 .messageToMeFormInfo{
@@ -388,6 +410,7 @@ margin-bottom: 14px;
 
 .messageToMeForm{
 	position: relative;
+	opacity: .9;
 }
 
 .messageToMeFormInfo:last-child{
@@ -420,7 +443,7 @@ margin-bottom: 14px;
 
 .messageToMeIcon{
 	text-align: center;
-	margin-top: 146px;
+	margin-top: 45px;
 }
 
 .messageToMeIcon>a{
