@@ -1,0 +1,452 @@
+body{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*Header*/
+header{
+	height: 61px;
+	background-color: #2A3E51;
+	display: flex;
+	line-height: 61px;
+	justify-content: space-around;
+	
+}
+
+.logo, nav>a{
+	font-size: 24px;
+	color: #fff;
+}
+
+nav>a{
+	margin-right: 40px;
+}
+
+/*Greeting*/
+.greeting{
+	background: url(../img/greeting/greeting.jpg) center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: calc(100% - 61px);
+	
+}
+
+.greetingContainer{
+	width: 69%;
+	height: 100%;
+	position: relative;
+}
+
+.greetingInfo{
+	text-align: center;
+	position: absolute;
+	left: 25%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.greetingText>h1{
+	font-size: 80px;
+	color: #213549;
+}
+
+.greetingText>h4{
+	font-size: 20px;
+	color: #76828E;
+	margin-top: 30px;
+}
+
+.greetingButton{
+	margin-top: 55px;
+}
+
+.greetingButton>a{
+	color: #697783;
+	font-size: 18px;
+	border: 2px solid #697783;
+	padding: 12px;
+	border-radius: 10px;
+}
+
+.greetingButton>a:first-child{
+	margin-right: 26px;
+}
+
+/*Title Page All*/
+.titlePage{
+	font-size: 32px;
+	color: #1A2E43;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 108px;
+}
+
+.titlePage::after{
+	content: "";
+  	display: block;
+ 	width: 70px;
+ 	height: 4px;
+	background-color: #EB7800;
+ 	margin: 0 auto ;
+ 	margin-top: 31px;
+}
+
+/*About Me*/
+.aboutMe{
+	width: 868px;
+	margin: 0 auto;
+}
+
+.aboutMeImg{
+	text-align: center;
+	border-radius: 50%;
+	margin: 59px 0 22px 0;
+}
+
+.aboutMeParagraph{
+	font-size: 16px;
+	color: #38475A;
+}
+
+.aboutMeText{
+	margin-bottom: 40px;
+}
+
+.aboutMeButton{
+	font-size: 16px;
+	color: #6F707F;
+	border: 2px solid #6F707F;
+	padding: 10px 11px;
+	border-radius: 10px;
+}
+
+.aboutMeButtonLoad{
+	text-align: center;
+}
+
+.aboutMeIcon{
+	margin-right: 7px;
+}
+
+/*What I Can*/
+.whatCan{
+	background: url(../img/whatCan/whatCan.jpg) center no-repeat;
+	background-size: cover;
+	height: 523px;
+}
+
+.whatCan>.titlePage{
+	padding-top: 107px;
+	margin-top: 97px;
+}
+
+.whatCanAbility{
+	display: flex;
+	margin: 107px auto 0 auto;
+	max-width: 1144px;
+}
+
+.abilityItem{
+text-align: center;
+width: 25%;
+padding: 14px 30px;
+}
+
+.abilityIcon{
+font-size: 20px;
+color: #2C3E51;
+}
+
+.abilityTitle{
+font-size: 18px;
+color: #E87700;
+margin: 15px 0 14px 0;
+}
+
+.abilityText{
+	color: #38475A;
+}
+
+/*My Case*/
+.myCaseHeader{
+text-align: center;
+font-size: 16px;
+color: #38475A;
+margin: 36px 0 41px 0;
+}
+
+.myCaseContainer{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+.myCaseInfo{
+	display: flex;
+	justify-content: space-between;
+}
+
+.myCaseParagraph{
+	width: 75%;
+}
+
+.contactsItem{
+margin-bottom: 14px;
+}
+
+.contactsTitle, .paragraphTitle{
+	font-size: 24px;
+	color: #2F4154;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.conntactsText{
+	font-size: 16px;
+	color: #38475A;
+}
+
+.paragraphText{
+	font-size: 20px;
+	color: #38475A;
+	font-weight: lighter;
+}
+
+.contactsButton{
+	display: block;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 43px;
+	background: #00B6AF;
+	border-radius: 10px;
+	margin-top: 11px;
+}
+
+/*Calculator*/
+.calculator{
+	width: 932px;
+	margin: 0 auto;
+}
+
+.calculatorTitle{
+	font-size: 45px;
+	color: #102031;
+	margin: 201px 0 59px 0;
+	text-align: center;
+}
+
+.formTitle{
+	font-size: 30px;
+	color: #102031;
+	margin-bottom: 22px;
+	text-transform: uppercase;
+}
+
+.calculatorForm{
+	font-size: 16px;
+	width: 100%;
+	height: 57px;
+	background-color: #EEEEEE;
+	margin-bottom: 44px;
+	padding: 10px 26px;
+}
+
+.termCost{
+	margin-top: 39px;
+	font-size: 20px;
+}
+
+.termCost::before{
+	content: "";
+  	display: block;
+ 	width: 100%;
+ 	height: 2px;
+	background-color: #D2D2D2;
+ 	margin: 0 auto ;
+ 	margin-bottom: 23px;
+}
+
+.termCostItem{
+	display: flex;
+	justify-content: space-between;
+}
+/*statistics*/
+.statistics{
+	background: url(../img/statistics/statistics.jpg) center no-repeat;
+	background-size: cover;
+	height: 499px;
+}
+
+.statistics>.titlePage{
+	padding-top: 103px;
+}
+
+.statisticsContainer{
+	width: 1140px;
+	margin: 0 auto;
+	margin-top: 88px;
+	display: flex;
+}
+
+.statisticsItem{
+	width: 25%;
+	text-align: center;
+}
+
+.statisticsIcon{
+	font-size: 38px;
+	color: #EA7E00;
+}
+
+.statisticsNumbers{
+	font-size: 38px;
+	color: #283C4E;
+	margin: 32px 0 30px 0;
+}
+
+.statisticsText{
+	font-size: 16px;
+	color: #283C4E;
+}
+
+/*Reviews*/
+.reviews{
+	text-align: center;
+	width: 708px;
+	margin: 0 auto;
+	color: #172C40;
+}
+
+.reviews>.titlePage{
+	margin-top: 105px;
+}
+
+.reviewsImg{
+	margin: 58px 0 35px 0;
+}
+
+.reviewsText{
+	margin-bottom: 35px;
+}
+
+.reviewsName{
+	font-weight: 700;
+}
+
+/*My Contacts*/
+.myContacts{
+	background: url(../img/myContacts/myContacts.jpg) center no-repeat;
+	background-size: cover;
+	height: 808px;
+	color: #fff;
+}
+
+.myContacts>.titlePage{
+	color: #fff;
+}
+
+.myContactsContainer{
+	width: 732px;
+	margin: 0 auto;
+}
+
+.myContactsText{
+	text-align: center;
+	font-size: 16px;
+	margin: 31px 0 48px 0;
+}
+
+.myContactsInfo{
+	display: flex;
+	font-size: 16px;
+}
+
+.myContactsItem{
+	text-align: center;
+	width: 33%;
+}
+
+.myContactsIcon{
+	font-size: 26px;
+}
+
+.myContactsLink{
+	margin: 14px 0 37px 0;
+}
+
+.messageToMeTitle{
+	text-align: center;
+	font-size: 26px;
+}
+
+.messageToMeFormInfo{
+	margin: 46px 0 14px 0;
+	width: 352px;
+	height: 34px;
+	font-size: 16px;
+	padding: 10px 12px;
+}
+
+.messageToMeForm{
+	position: relative;
+}
+
+.messageToMeFormInfo:last-child{
+	position: absolute;
+	right: 0;
+}
+
+.messageToMeFormText{
+	font-size: 16px;
+	width: 100%;
+	height: 94px;
+	resize: none;
+	margin-bottom: 28px;
+	padding: 10px 12px;
+}
+
+.messageToMeFormButton{
+	text-align: center;
+}
+
+.messageToMeFormButton>input{
+	font-size: 20px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 10px;
+	background-color: transparent;
+	padding: 12px 16px;
+	cursor: pointer;
+}
+
+.messageToMeIcon{
+	text-align: center;
+	margin-top: 146px;
+}
+
+.messageToMeIcon>a{
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+	margin-right: 44px;
+	/*background-color: violet;*/
+}
+
+.messageToMeIcon>a:last-child{
+	margin-right: 0;
+}
+
+/*Map*/
+.mapSite{
+	width: 100%;
+	height: 350px;
+}
+
+/*Footer*/
+.footerText{
+	text-align: center;
+	background: #2C3E51;
+	height: 70px;
+	line-height: 70px;
+	color: #fff;
+}
