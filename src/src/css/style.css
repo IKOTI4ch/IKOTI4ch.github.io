@@ -10,6 +10,8 @@ body{
 	z-index: 99;
 	overflow: hidden;
 	transition: 1s all;
+	/*Preloader выключен*/
+	/*display: none;*/
 }
 
 .cat {
@@ -162,7 +164,7 @@ nav a:hover::after{
 }
 
 .logo{
-	animation-delay: .1s;
+	animation-duration: .1s;
 }
 
 .headerGreeting a:hover{
