@@ -7,267 +7,308 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>CatMint</title>
     <script src="https://kit.fontawesome.com/aada28b0ad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!--Loader-->
+    <div id="preloader" class="preloader">
+        <div class="cat">
+            <div class="catBody"></div>
+            <div class="catBody"></div>
+            <div class="catTail"></div>
+            <div class="catHead"></div>
+        </div>
+    </div>
+
     <!--Header-->
-
     <header>
-        <div class="logo">Даня Cat</div>
+        <div class="headerGreeting">
+            <div class="logo animate__animated animate__jackInTheBox"><a class="" href="#">Даня Cat</a></div>
 
-        <nav>
-            <a href="#">обо мне</a>
-            <a href="#">услуги</a>
-            <a href="#">кейсы</a>
-            <a href="#">прайс</a>
-            <a href="#">отзывы</a>
-            <a href="#">контакты</a>
-        </nav>
+            <nav>
+                <div class="animate__animated animate__bounceInDown animate__delay0_4s"><a href="#">обо мне</a></div>
+                <div class="animate__animated animate__bounceInDown animate__delay0_8s"><a href="#">услуги</a></div>
+                <div class="animate__animated animate__bounceInDown animate__delay1_2s"><a href="#">кейсы</a></div>
+                <div class="animate__animated animate__bounceInDown animate__delay1_6s"><a href="#">прайс</a></div>
+                <div class="animate__animated animate__bounceInDown animate__delay2s"><a href="#">отзывы</a></div>
+                <div class="animate__animated animate__bounceInDown animate__delay2_4s"><a href="#">контакты</a></div>
+            </nav>
+        </div>
     </header>
 
     <!--Greeting-->
-    <div class="greeting">
-        <div class="greetingContainer">
-            <div class="greetingInfo">
-                <div class="greetingText">
-                    <h1>Привет<br>Меня зовут Даня</h1>
-                    <h4>full stack разработчик и помощник в создании вашего сайта</h4>
-                </div>
+    <main>
+        <div class="greeting">
+            <div class="greetingContainer">
+                <div class="greetingInfo animate__animated animate__zoomInDown animate__delay0_8s">
+                    <div class="greetingText">
+                        <h1>Привет<br>Меня зовут Даня</h1>
+                        <h4>full stack разработчик и помощник в создании вашего сайта</h4>
+                    </div>
 
-                <div class="greetingButton">
-                    <a href="#">Обо мне</a>
-                    <a href="#">Мои работы</a>
+                    <div class="greetingButton">
+                        <a href="#">Обо мне</a>
+                        <a href="#">Мои работы</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!--Title Page All-->
-    <div class="titlePage">
-        <h2>обо мне</h2>
-    </div>
-
-    <!--About Me-->
-    <div class="aboutMe">
-        <div class="aboutMeImg">
-            <img src="img/aboutMe/aboutMe.jpg" alt="">
+    <section>
+        <div class="titlePage">
+            <h2>обо мне</h2>
         </div>
 
-        <div class="aboutMeParagraph">
-            <p class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
-                ornare diam. Sed commodo nibh ante
-                facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        <!--About Me-->
+        <div class="aboutMe">
+            <div class="aboutMeImg">
+                <img src="img/aboutMe/aboutMe.jpg" alt="">
+            </div>
 
-            <p class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
-                ornare diam. Sed commodo nibh ante
-                facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-        </div>
+            <div class="aboutMeParagraph">
+                <p class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
+                    ornare diam. Sed commodo nibh ante
+                    facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
 
-        <div class="aboutMeButtonLoad">
-            <a href="#" class="aboutMeButton"><i class="fas fa-download aboutMeIcon"></i>Скачать резюме</a>
+                <p class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
+                    ornare diam. Sed commodo nibh ante
+                    facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            </div>
+
+            <div class="aboutMeButtonLoad">
+                <a href="#" class="aboutMeButton"><i class="fas fa-download aboutMeIcon"></i>Скачать резюме</a>
+            </div>
         </div>
-    </div>
+    </section>
 
     <!--What I Can-->
-    <div class="whatCan">
-        <div class="titlePage">
-            <h2>что я умею</h2>
+    <section>
+        <div class="whatCan">
+            <div class="titlePage">
+                <h2>что я умею</h2>
+            </div>
+
+            <div class="whatCanAbility">
+                <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_4s">
+                    <div class="abilityIcon"><i class="fas fa-laptop"></i></div>
+                    <div class="abilityTitle">Веб-дизайн</div>
+                    <div class="abilityText">Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam. </div>
+                </div>
+
+                <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_8s">
+                    <div class="abilityIcon"><i class="fas fa-code fasFaCode"></i></div>
+                    <div class="abilityTitle">Разработка</div>
+                    <div class="abilityText">Lorem ipsum dolor sit amet placerat
+                        facilisis mi in tempus eleifend
+                        pellentesque.</div>
+                </div>
+
+                <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_2s">
+                    <div class="abilityIcon"><i class="fas fa-rocket"></i></div>
+                    <div class="abilityTitle">СЕО-Оптимизация</div>
+                    <div class="abilityText">Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque etiam.</div>
+                </div>
+
+                <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_6s">
+                    <div class="abilityIcon"><i class="fas fa-bullhorn"></i></div>
+                    <div class="abilityTitle">Маркетинг</div>
+                    <div class="abilityText">Lorem ipsum dolor sit amet placerat
+                        facilisis felis mi in tempus eleifend
+                        pellentesque natoque.</div>
+                </div>
+            </div>
         </div>
-
-        <div class="whatCanAbility">
-            <div class="abilityItem">
-                <div class="abilityIcon"><i class="fas fa-laptop"></i></div>
-                <div class="abilityTitle">Веб-дизайн</div>
-                <div class="abilityText">Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam. </div>
-            </div>
-
-            <div class="abilityItem">
-                <div class="abilityIcon"><i class="fas fa-code fasFaCode"></i></div>
-                <div class="abilityTitle">Разработка</div>
-                <div class="abilityText">Lorem ipsum dolor sit amet placerat
-                    facilisis mi in tempus eleifend
-                    pellentesque.</div>
-            </div>
-
-            <div class="abilityItem">
-                <div class="abilityIcon"><i class="fas fa-rocket"></i></div>
-                <div class="abilityTitle">СЕО-Оптимизация</div>
-                <div class="abilityText">Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque etiam.</div>
-            </div>
-
-            <div class="abilityItem">
-                <div class="abilityIcon"><i class="fas fa-bullhorn"></i></div>
-                <div class="abilityTitle">Маркетинг</div>
-                <div class="abilityText">Lorem ipsum dolor sit amet placerat
-                    facilisis felis mi in tempus eleifend
-                    pellentesque natoque.</div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!--My Case-->
-    <div class="myCase">
-        <div class="titlePage">
-            <h2>кейсы</h2>
-        </div>
+    <section>
+        <div class="myCase">
+            <div class="titlePage">
+                <h2>кейсы</h2>
+            </div>
 
-        <div class="myCaseHeader">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh
-            ante facilisis.
-        </div>
+            <div class="myCaseHeader">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo
+                nibh
+                ante facilisis.
+            </div>
 
-        <div class="myCaseContainer">
-            <img class="myCaseImg" src="img/myCase/myCase.jpg" alt="">
+            <div class="myCaseContainer">
+                <img class="myCaseImg" src="img/myCase/myCase.jpg" alt="">
 
-            <div class="myCaseInfo">
-                <div class="myCaseContacts">
-                    <div class="contactsItem">
-                        <div class="contactsTitle">client:</div>
-                        <div class="conntactsText">Какая-то компания</div>
+                <div class="myCaseInfo">
+                    <div class="myCaseContacts">
+                        <div class="contactsItem">
+                            <div class="contactsTitle">client:</div>
+                            <div class="conntactsText">Какая-то компания</div>
+                        </div>
+                        <div class="contactsItem">
+                            <div class="contactsTitle">web site:</div>
+                            <div class="conntactsText">http://www.somedomain.com</div>
+                        </div>
+
+                        <a class="contactsButton" href="#">visit live site</a>
                     </div>
-                    <div class="contactsItem">
-                        <div class="contactsTitle">web site:</div>
-                        <div class="conntactsText">http://www.somedomain.com</div>
+
+                    <div class="myCaseParagraph">
+                        <div class="paragraphTitle">Название проекта</div>
+                        <div class="paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do
+                            eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea
+                            commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.</div>
                     </div>
-
-                    <a class="contactsButton" href="#">visit live site</a>
-                </div>
-
-                <div class="myCaseParagraph">
-                    <div class="paragraphTitle">Название проекта</div>
-                    <div class="paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--Calculator-->
-    <div class="calculator">
-        <h2 class="calculatorTitle">Расчет стоимости</h2>
+    <section>
+        <div class="calculator">
+            <h2 class="calculatorTitle">Расчет стоимости</h2>
 
-        <div class="calculcatorForm">
-            <div class="formItem">
-                <h3 class="formTitle">тип сайта</h3>
+            <div class="calculcatorForm">
+                <div class="formItem">
+                    <h3 class="formTitle">тип сайта</h3>
 
-                <form action="#" class="formText">
-                    <div class="calculatorFormContainer">
-                        <select name="#" id="#" class="calculatorFormSelect">
-                            <option selected disabled class="formLable">Выберите пункт...</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
+                    <form action="#" class="formText">
+                        <div class="calculatorFormContainer">
+                            <select name="#" id="#" class="calculatorFormSelect">
+                                <option selected disabled class="formLable">Выберите пункт...</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="formItem">
+                    <h3 class="formTitle">дизайн</h3>
+
+                    <form action="#">
+                        <div class="calculatorFormContainer">
+                            <select name="#" id="#" class="calculatorFormSelect">
+                                <option selected disabled class="formLable">Выберите пункт...</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="formItem">
+                    <h3 class="formTitle">адаптивность</h3>
+
+                    <form action="#">
+                        <div class="calculatorFormContainer">
+                            <select name="#" id="#" class="calculatorFormSelect">
+                                <option selected disabled class="formLable">Выберите пункт...</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Term/Cost-->
+            <div class="termCost">
+                <div class="termCostItem">
+                    <div class="termCostText">Сроки</div>
+                    <div class="termCostPrice">0</div>
+                </div>
+                <div class="termCostItem">
+                    <div class="termCostText">Стоимость</div>
+                    <div class="termCostPrice">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!--Statistics-->
+        <div class="statistics">
+            <div class="parallax">
+                <div class="titlePage">
+                    <h2>немного статистики</h2>
+                </div>
+
+                <div class="statisticsContainer">
+                    <div class="statisticsItem">
+                        <div class="statisticsIcon"><i class="far fa-smile"></i></div>
+                        <div class="statisticsNumbers">120</div>
+                        <div class="statisticsText">счастливых клиентов</div>
                     </div>
-                </form>
-            </div>
 
-            <div class="formItem">
-                <h3 class="formTitle">дизайн</h3>
-
-                <form action="#">
-                    <div class="calculatorFormContainer">
-                        <select name="#" id="#" class="calculatorFormSelect">
-                            <option class="formLable">Выберите пункт...</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
+                    <div class="statisticsItem">
+                        <div class="statisticsIcon"><i class="fas fa-code"></i></div>
+                        <div class="statisticsNumbers">4.600</div>
+                        <div class="statisticsText">часов работы</div>
                     </div>
-                </form>
-            </div>
 
-            <div class="formItem">
-                <h3 class="formTitle">адаптивность</h3>
-
-                <form action="#">
-                    <div class="calculatorFormContainer">
-                        <select name="#" id="#" class="calculatorFormSelect">
-                            <option class="formLable">Выберите пункт...</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                        </select>
+                    <div class="statisticsItem">
+                        <div class="statisticsIcon"><i class="far fa-check-square"></i></div>
+                        <div class="statisticsNumbers">340</div>
+                        <div class="statisticsText">проектов завершено</div>
                     </div>
-                </form>
+
+                    <div class="statisticsItem">
+                        <div class="statisticsIcon"><i class="fas fa-trophy"></i></div>
+                        <div class="statisticsNumbers">23</div>
+                        <div class="statisticsText">наград получено</div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!--Term/Cost-->
-        <div class="termCost">
-            <div class="termCostItem">
-                <div class="termCostText">Сроки</div>
-                <div class="termCostPrice">0</div>
-            </div>
-            <div class="termCostItem">
-                <div class="termCostText">Стоимость</div>
-                <div class="termCostPrice">0</div>
-            </div>
-        </div>
-    </div>
-
-    <!--Statistics-->
-    <div class="statistics">
-        <div class="titlePage">
-            <h2>немного статистики</h2>
-        </div>
-
-        <div class="statisticsContainer">
-            <div class="statisticsItem">
-                <div class="statisticsIcon"><i class="far fa-smile"></i></div>
-                <div class="statisticsNumbers">120</div>
-                <div class="statisticsText">счастливых клиентов</div>
-            </div>
-
-            <div class="statisticsItem">
-                <div class="statisticsIcon"><i class="fas fa-code"></i></div>
-                <div class="statisticsNumbers">4.600</div>
-                <div class="statisticsText">часов работы</div>
-            </div>
-
-            <div class="statisticsItem">
-                <div class="statisticsIcon"><i class="far fa-check-square"></i></div>
-                <div class="statisticsNumbers">340</div>
-                <div class="statisticsText">проектов завершено</div>
-            </div>
-
-            <div class="statisticsItem">
-                <div class="statisticsIcon"><i class="fas fa-trophy"></i></div>
-                <div class="statisticsNumbers">23</div>
-                <div class="statisticsText">наград получено</div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!--Reviews-->
-    <div class="reviews">
-        <div class="titlePage">
-            <h2>отзывы</h2>
-        </div>
+    <section>
+        <div class="reviews">
+            <div class="titlePage">
+                <h2>отзывы</h2>
+            </div>
 
-        <div class="reviewsItem">
-            <img class="reviewsImg" src="img/reviews/reviews.jpg" alt="">
+            <div class="reviewsItem">
+                <img class="reviewsImg" src="img/reviews/reviews.jpg" alt="">
 
-            <div class="reviewsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
-                ornare diam. Sed commodo nibh ante
-                facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</div>
-            <div class="reviewsContacts"><span class="reviewsName">Михаил</span>, Ген директор ПАО “Газпром”.</div>
+                <div class="reviewsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo
+                    nec
+                    ornare diam. Sed commodo nibh ante
+                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</div>
+                <div class="reviewsContacts"><span class="reviewsName">Михаил</span>, Ген директор ПАО “Газпром”.</div>
 
-            <div class="circleSlider">
-                <div class="circleSliderItem"></div>
-                <div class="circleSliderItem"></div>
-                <div class="circleSliderItem"></div>
+                <div class="circleSlider">
+                    <div class="circleSliderItem"></div>
+                    <div class="circleSliderItem"></div>
+                    <div class="circleSliderItem"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--My Contacts-->
     <footer>
@@ -281,18 +322,18 @@
                     nec ornare diamcoccodo </div>
                 <div class="myContactsInfo">
                     <div class="myContactsItem">
-                        <div class="myContactsIcon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="myContactsIcon"><a href="#"><i class="fas fa-map-marker-alt"></a></i></div>
                         <div class="myContactsLink">Санкт-Петербург<br>
                             Невский проспект 11</div>
                     </div>
 
                     <div class="myContactsItem">
-                        <div class="myContactsIcon"><i class="far fa-envelope"></i></div>
+                        <div class="myContactsIcon"><a href="#"><i class="far fa-envelope"></i></a></div>
                         <div class="myContactsLink">info@companyname.com</div>
                     </div>
 
                     <div class="myContactsItem">
-                        <div class="myContactsIcon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="myContactsIcon"><a href="#"><i class="fas fa-phone-alt"></i></a></div>
                         <div class="myContactsLink">+7 999 999-99-99</div>
                     </div>
                 </div>
@@ -333,6 +374,9 @@
         <!--Footer-->
         <div class="footerText">Copyright © 2021 Даня Cat. Design by Web</div>
     </footer>
+
+    <!--Script-->
+    <script src="js/preloader.js"></script>
 </body>
 
 </html>
