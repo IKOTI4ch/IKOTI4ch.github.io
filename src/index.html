@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>CatMint</title>
-    <script src="https://kit.fontawesome.com/aada28b0ad.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -24,66 +24,86 @@
     </div>
 
     <!--Header-->
-    <header>
-        <div class="headerGreeting">
-            <div class="logo">
-                <div class="animate__animated animate__jackInTheBox "><a class="" href="#">Даня Cat</a></div>
-            </div>
+    <header class="fixed-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="logo col-2 text-center">
+                    <div class="animate__animated animate__jackInTheBox "><a class="" href="#">Даня Cat</a></div>
+                </div>
 
-            <nav>
-                <div class="animate__animated animate__bounceInDown animate__delay0_4s"><a href="#">обо мне</a></div>
-                <div class="animate__animated animate__bounceInDown animate__delay0_8s"><a href="#">услуги</a></div>
-                <div class="animate__animated animate__bounceInDown animate__delay1_2s"><a href="#">кейсы</a></div>
-                <div class="animate__animated animate__bounceInDown animate__delay1_6s"><a href="#">прайс</a></div>
-                <div class="animate__animated animate__bounceInDown animate__delay2s"><a href="#">отзывы</a></div>
-                <div class="animate__animated animate__bounceInDown animate__delay2_4s"><a href="#">контакты</a></div>
-            </nav>
+                <div class="navigation col-6 offset-2 d-flex justify-content-between">
+                    <div class="animate__animated animate__bounceInDown animate__delay0_4s"><a href="#">обо мне</a>
+                    </div>
+                    <div class="animate__animated animate__bounceInDown animate__delay0_8s"><a href="#">услуги</a>
+                    </div>
+                    <div class="animate__animated animate__bounceInDown animate__delay1_2s"><a href="#">кейсы</a>
+                    </div>
+                    <div class="animate__animated animate__bounceInDown animate__delay1_6s"><a href="#">прайс</a>
+                    </div>
+                    <div class="animate__animated animate__bounceInDown animate__delay2s"><a href="#">отзывы</a>
+                    </div>
+                    <div class="animate__animated animate__bounceInDown animate__delay2_4s"><a href="#">контакты</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </header>
 
     <!--Greeting-->
     <main>
         <div class="greeting">
-            <div class="greetingContainer">
-                <div class="greetingInfo animate__animated animate__zoomInDown animate__delay0_8s">
-                    <div class="greetingText">
-                        <h1>Привет<br>Меня зовут Даня</h1>
-                        <h4>full stack разработчик и помощник в создании вашего сайта</h4>
-                    </div>
+            <div class="container h-100">
+                <div class="row align-items-center h-100 text-center">
+                    <div class="col-6">
+                        <div class="animate__animated animate__zoomInDown animate__delay0_8s">
+                            <div class="greetingText">
+                                <h1>Привет<br>Меня зовут Даня</h1>
+                                <h4>full stack веб-разработчик и Android разработчик</h4>
+                            </div>
 
-                    <div class="greetingButton">
-                        <a href="#">Обо мне</a>
-                        <a href="#">Мои работы</a>
+                            <div class="greetingButton">
+                                <a class="btn px-2 py-1" href="#">Обо мне</a>
+                                <a class="btn px-2 py-1" href="#">Мои работы</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!--Title Page All-->
+    <!--About Me-->
     <section>
-        <div class="titlePage">
-            <h2>обо мне</h2>
-        </div>
-
-        <!--About Me-->
-        <div class="aboutMe">
-            <div class="aboutMeImg">
-                <img src="img/aboutMe/aboutMe.jpg" alt="">
+        <div class="container text-center">
+            <div class="titlePage">
+                <h2>обо мне</h2>
             </div>
 
-            <div class="aboutMeParagraph">
-                <p class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
-                    ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <img class="m-5" src="img/aboutMe/aboutMe.jpg" alt="">
 
-                <p class="aboutMeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec
-                    ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+            <div class="row mb-4">
+                <div class="col-8 offset-2 text-start">
+                    <p class="aboutMeParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+                        dapibus leo nec
+                        ornare diam. Sed commodo nibh ante
+                        facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-8 offset-2 text-start">
+                    <p class="aboutMeParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed
+                        dapibus leo nec
+                        ornare diam. Sed commodo nibh ante
+                        facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                </div>
             </div>
 
-            <div class="aboutMeButtonLoad">
-                <a href="#" class="aboutMeButton"><i class="fas fa-download aboutMeIcon"></i>Скачать резюме</a>
+            <div class="row mt-3 mb-5">
+                <div class="col-2 offset-5 text-center">
+                    <a href="#" class="aboutMeButton btn"><i class="fas fa-download aboutMeIcon"></i> Скачать
+                        резюме</a>
+                </div>
             </div>
         </div>
     </section>
@@ -91,87 +111,128 @@
     <!--What I Can-->
     <section>
         <div class="whatCan">
-            <div class="titlePage">
-                <h2>что я умею</h2>
+            <div class="container text-center">
+                <div class="titlePage">
+                    <h2>что я умею</h2>
+                </div>
+
+                <div class="row mt-5 pt-5">
+                    <div class="col-3">
+                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_4s">
+                            <div class="abilityIcon"><i class="fas fa-laptop"></i></div>
+                            <div class="abilityTitle my-3">Веб-дизайн</div>
+                            <div class="abilityText">Lorem ipsum dolor sit amet placerat
+                                facilisis felis mi in tempus eleifend
+                                pellentesque natoque etiam. </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_8s">
+                            <div class="abilityIcon"><i class="fas fa-code fasFaCode"></i></div>
+                            <div class="abilityTitle my-3">Разработка</div>
+                            <div class="abilityText">Lorem ipsum dolor sit amet placerat
+                                facilisis mi in tempus eleifend
+                                pellentesque.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_2s">
+                            <div class="abilityIcon"><i class="fas fa-rocket"></i></div>
+                            <div class="abilityTitle my-3">СЕО-Оптимизация</div>
+                            <div class="abilityText">Lorem ipsum dolor sit amet placerat
+                                facilisis felis mi in tempus eleifend
+                                pellentesque natoque etiam.</div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_6s">
+                            <div class="abilityIcon"><i class="fas fa-bullhorn"></i></div>
+                            <div class="abilityTitle my-3">Маркетинг</div>
+                            <div class="abilityText">Lorem ipsum dolor sit amet placerat
+                                facilisis felis mi in tempus eleifend
+                                pellentesque natoque.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="whatCanAbility">
-                <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_4s">
-                    <div class="abilityIcon"><i class="fas fa-laptop"></i></div>
-                    <div class="abilityTitle">Веб-дизайн</div>
-                    <div class="abilityText">Lorem ipsum dolor sit amet placerat
-                        facilisis felis mi in tempus eleifend
-                        pellentesque natoque etiam. </div>
-                </div>
-
-                <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_8s">
-                    <div class="abilityIcon"><i class="fas fa-code fasFaCode"></i></div>
-                    <div class="abilityTitle">Разработка</div>
-                    <div class="abilityText">Lorem ipsum dolor sit amet placerat
-                        facilisis mi in tempus eleifend
-                        pellentesque.</div>
-                </div>
-
-                <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_2s">
-                    <div class="abilityIcon"><i class="fas fa-rocket"></i></div>
-                    <div class="abilityTitle">СЕО-Оптимизация</div>
-                    <div class="abilityText">Lorem ipsum dolor sit amet placerat
-                        facilisis felis mi in tempus eleifend
-                        pellentesque natoque etiam.</div>
-                </div>
-
-                <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_6s">
-                    <div class="abilityIcon"><i class="fas fa-bullhorn"></i></div>
-                    <div class="abilityTitle">Маркетинг</div>
-                    <div class="abilityText">Lorem ipsum dolor sit amet placerat
-                        facilisis felis mi in tempus eleifend
-                        pellentesque natoque.</div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!--My Case-->
     <section>
-        <div class="myCase">
-            <div class="titlePage">
-                <h2>кейсы</h2>
-            </div>
+        <div class="myCase mb-5">
+            <div class="container">
+                <div class="titlePage text-center mb-4">
+                    <h2>кейсы</h2>
+                </div>
 
-            <div class="myCaseHeader">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo
-                nibh
-                ante facilisis.
-            </div>
+                <div class="row py-2">
+                    <div class="col-8 offset-2 text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare
+                        diamcoccodo nibh ante facilisis.</div>
+                </div>
 
-            <div class="myCaseContainer">
-                <img class="myCaseImg" src="img/myCase/myCase.jpg" alt="">
+                <div class="row mt-5">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/myCase/myCase.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/myCase/myCase.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/myCase/myCase.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="myCaseButton-prev carousel-control-prev mt-3 px-3" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="myCaseButton-next carousel-control-next mt-3 px-3" type="button"
+                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
 
-                <div class="myCaseInfo">
-                    <div class="myCaseContacts">
-                        <div class="contactsItem">
+                <div class="row">
+                    <div class="col-2">
+                        <div class="contactsItem mb-3">
                             <div class="contactsTitle">client:</div>
                             <div class="conntactsText">Какая-то компания</div>
                         </div>
-                        <div class="contactsItem">
+                        <div class="contactsItem mb-4">
                             <div class="contactsTitle">web site:</div>
                             <div class="conntactsText">http://www.somedomain.com</div>
                         </div>
-
-                        <a class="contactsButton" href="#">visit live site</a>
                     </div>
 
-                    <div class="myCaseParagraph">
-                        <div class="paragraphTitle">Название проекта</div>
-                        <div class="paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do
-                            eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna
-                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea
-                            commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur.</div>
+                    <div class="col-9 offset-1">
+                        <div class="myCaseParagraph">
+                            <div class="paragraphTitle">Название проекта</div>
+                            <div class="paragraphText">Lorem ipsum dolor sit amet, consectetur adipiscing elit., sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip
+                                ex ea
+                                commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <a class="contactsButton text-center px-3 py-2" href="#">visit live site</a>
                     </div>
                 </div>
             </div>
@@ -180,107 +241,127 @@
 
     <!--Calculator-->
     <section>
-        <div class="calculator">
-            <h2 class="calculatorTitle">Расчет стоимости</h2>
-
-            <div class="calculcatorForm">
-                <div class="formItem">
-                    <h3 class="formTitle">тип сайта</h3>
-
-                    <form action="#" class="formText">
-                        <div class="calculatorFormContainer">
-                            <select name="#" id="#" class="calculatorFormSelect">
-                                <option selected disabled class="formLable">Выберите пункт...</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                            </select>
+        <div class="calculator pt-5">
+            <div class="container pb-3">
+                <div class="row">
+                    <div class="col-10 offset-1 pt-4 mb-5">
+                        <div class="row">
+                            <div class="col-4 offset-4 text-center">
+                                <div class="calculatorTitle">Расчет стоимости</div>
+                            </div>
                         </div>
-                    </form>
-                </div>
 
-                <div class="formItem">
-                    <h3 class="formTitle">дизайн</h3>
+                        <form action="#" id="calculatorForm">
+                            <div class="row mb-3">
+                                <h3 class="formTitle">тип сайта</h3>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="calculatorFormContainer">
+                                    <select name="#" id="#" class="calculatorFormSelect">
+                                        <option selected disabled class="formLable">Выберите пункт...</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                    <form action="#">
-                        <div class="calculatorFormContainer">
-                            <select name="#" id="#" class="calculatorFormSelect">
-                                <option selected disabled class="formLable">Выберите пункт...</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                            </select>
+                            <div class="row mb-3">
+                                <h3 class="formTitle">дизайн</h3>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="calculatorFormContainer">
+                                    <select name="#" id="#" class="calculatorFormSelect">
+                                        <option selected disabled class="formLable">Выберите пункт...</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <h3 class="formTitle">адаптивность</h3>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="calculatorFormContainer">
+                                    <select name="#" id="#" class="calculatorFormSelect">
+                                        <option selected disabled class="formLable">Выберите пункт...</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                        <option value="">3</option>
+                                        <option value="">4</option>
+                                        <option value="">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="termCost">
+                            <div class="row pt-4">
+                                <div class="termCostText col-2">Сроки</div>
+                                <div class="termCostNumber col-1 offset-9 text-end">0</div>
+                            </div>
+                            <div class="row">
+                                <div class="termCostText col-2">Стоимость</div>
+                                <div class="termCostNumber col-1 offset-9 text-end">0</div>
+                            </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
 
-                <div class="formItem">
-                    <h3 class="formTitle">адаптивность</h3>
-
-                    <form action="#">
-                        <div class="calculatorFormContainer">
-                            <select name="#" id="#" class="calculatorFormSelect">
-                                <option selected disabled class="formLable">Выберите пункт...</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                                <option value="">4</option>
-                                <option value="">5</option>
-                            </select>
+                    <div class="row mb-4">
+                        <div class="col-2 offset-5 text-center">
+                            <input class="calculatorButton px-3 py-2" type="submit" value="Оставить заявку">
                         </div>
-                    </form>
-                </div>
-            </div>
-
-            <!--Term/Cost-->
-            <div class="termCost">
-                <div class="termCostItem">
-                    <div class="termCostText">Сроки</div>
-                    <div class="termCostPrice">0</div>
-                </div>
-                <div class="termCostItem">
-                    <div class="termCostText">Стоимость</div>
-                    <div class="termCostPrice">0</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!--Statistics-->
     <section>
-        <!--Statistics-->
-        <div class="statistics">
-            <div class="parallax">
-                <div class="titlePage">
+        <div class="statistics mt-5">
+            <div class="container text-center">
+                <div class="titlePage mb-5">
                     <h2>немного статистики</h2>
                 </div>
 
-                <div class="statisticsContainer">
-                    <div class="statisticsItem">
-                        <div class="statisticsIcon"><i class="far fa-smile"></i></div>
-                        <div class="statisticsNumbers">120</div>
-                        <div class="statisticsText">счастливых клиентов</div>
+                <div class="row pt-5">
+                    <div class="col-3">
+                        <div class="statisticsItem">
+                            <div class="statisticsIcon"><i class="far fa-smile"></i></div>
+                            <div class="statisticsNumbers">120</div>
+                            <div class="statisticsText">счастливых клиентов</div>
+                        </div>
                     </div>
 
-                    <div class="statisticsItem">
-                        <div class="statisticsIcon"><i class="fas fa-code"></i></div>
-                        <div class="statisticsNumbers">4.600</div>
-                        <div class="statisticsText">часов работы</div>
+                    <div class="col-3">
+                        <div class="statisticsItem">
+                            <div class="statisticsIcon"><i class="fas fa-code"></i></div>
+                            <div class="statisticsNumbers">4.600</div>
+                            <div class="statisticsText">часов работы</div>
+                        </div>
                     </div>
 
-                    <div class="statisticsItem">
-                        <div class="statisticsIcon"><i class="far fa-check-square"></i></div>
-                        <div class="statisticsNumbers">340</div>
-                        <div class="statisticsText">проектов завершено</div>
+                    <div class="col-3">
+                        <div class="statisticsItem">
+                            <div class="statisticsIcon"><i class="far fa-check-square"></i></div>
+                            <div class="statisticsNumbers">340</div>
+                            <div class="statisticsText">проектов завершено</div>
+                        </div>
                     </div>
 
-                    <div class="statisticsItem">
-                        <div class="statisticsIcon"><i class="fas fa-trophy"></i></div>
-                        <div class="statisticsNumbers">23</div>
-                        <div class="statisticsText">наград получено</div>
+                    <div class="col-3">
+                        <div class="statisticsItem">
+                            <div class="statisticsIcon"><i class="fas fa-trophy"></i></div>
+                            <div class="statisticsNumbers">23</div>
+                            <div class="statisticsText">наград получено</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -290,23 +371,89 @@
     <!--Reviews-->
     <section>
         <div class="reviews">
-            <div class="titlePage">
-                <h2>отзывы</h2>
-            </div>
+            <div class="container text-center mb-5">
+                <div class="titlePage mb-5">
+                    <h2>отзывы</h2>
+                </div>
 
-            <div class="reviewsItem">
-                <img class="reviewsImg" src="img/reviews/reviews.jpg" alt="">
+                <div class="row mb-4">
+                    <div class="col-10 offset-1">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide reviewsSlider"
+                            data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="row">
+                                            <div class="col-8 offset-2 reviewsText">
+                                                <h4 class="reviewsText">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing
+                                                    elit. Duis sed
+                                                    dapibus leo
+                                                    nec ornare diam. Sed commodo nibh ante
+                                                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare
+                                                    diam.</h4>
+                                                <p><span class="fw-bold">Михаил</span>, Ген директор ПАО “Газпром”.</p>
+                                            </div>
+                                        </div>
 
-                <div class="reviewsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo
-                    nec
-                    ornare diam. Sed commodo nibh ante
-                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.</div>
-                <div class="reviewsContacts"><span class="reviewsName">Михаил</span>, Ген директор ПАО “Газпром”.</div>
-
-                <div class="circleSlider">
-                    <div class="circleSliderItem"></div>
-                    <div class="circleSliderItem"></div>
-                    <div class="circleSliderItem"></div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="2000">
+                                    <img src="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="row">
+                                            <div class="col-8 offset-2 reviewsText">
+                                                <h4 class="reviewsText">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing
+                                                    elit. Duis sed
+                                                    dapibus leo
+                                                    nec ornare diam. Sed commodo nibh ante
+                                                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare
+                                                    diam.</h4>
+                                                <p><span class="fw-bold">Михаил</span>, Ген директор ПАО “Газпром”.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <div class="row">
+                                            <div class="col-8 offset-2 reviewsText">
+                                                <h4 class="reviewsText">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing
+                                                    elit. Duis sed
+                                                    dapibus leo
+                                                    nec ornare diam. Sed commodo nibh ante
+                                                    facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare
+                                                    diam.</h4>
+                                                <p><span class="fw-bold">Михаил</span>, Ген директор ПАО “Газпром”.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -315,70 +462,102 @@
     <!--My Contacts-->
     <footer>
         <div class="myContacts">
-            <div class="titlePage">
-                <h2>мои контакты</h2>
-            </div>
+            <div class="container text-center">
+                <div class="titlePage mb-4">
+                    <h2>мои контакты</h2>
+                </div>
 
-            <div class="myContactsContainer">
-                <div class="myContactsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo
-                    nec ornare diamcoccodo </div>
-                <div class="myContactsInfo">
-                    <div class="myContactsItem">
-                        <div class="myContactsIcon"><a href="#"><i class="fas fa-map-marker-alt"></a></i></div>
-                        <div class="myContactsLink">Санкт-Петербург<br>
-                            Невский проспект 11</div>
+                <div class="row py-2">
+                    <div class="col-6 offset-3 text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leo
+                        nec ornare diamcoccodo</div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-2 offset-3">
+                        <div class="myContactsItem">
+                            <div class="myContactsIcon mb-2"><a href="#"><i class="fas fa-map-marker-alt"></a></i>
+                            </div>
+                            <div class="myContactsLink">Санкт-Петербург<br>
+                                Невский проспект 11</div>
+                        </div>
                     </div>
 
-                    <div class="myContactsItem">
-                        <div class="myContactsIcon"><a href="#"><i class="far fa-envelope"></i></a></div>
-                        <div class="myContactsLink">info@companyname.com</div>
+                    <div class="col-2">
+                        <div class="myContactsItem">
+                            <div class="myContactsIcon mb-3"><a href="#"><i class="far fa-envelope"></i></a></div>
+                            <div class="myContactsLink">info@companyname.com</div>
+                        </div>
                     </div>
 
-                    <div class="myContactsItem">
-                        <div class="myContactsIcon"><a href="#"><i class="fas fa-phone-alt"></i></a></div>
-                        <div class="myContactsLink">+7 999 999-99-99</div>
+                    <div class="col-2">
+                        <div class="myContactsItem">
+                            <div class="myContactsIcon mb-3"><a href="#"><i class="fas fa-phone-alt"></i></a></div>
+                            <div class="myContactsLink">+7 999 999-99-99</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="messageToMe">
-                    <div class="messageToMeTitle">оставте мне сообщение</div>
-
-                    <div class="messageToMeForm">
-                        <form action="#" class="messageToMeFormAll">
-                            <div class="messageToMeForm">
-                                <input type="text" name="" id="" placeholder="Имя" class="messageToMeFormInfo">
-                                <input type="email" name="" id="" placeholder="Email" class="messageToMeFormInfo">
-                            </div>
-                            <textarea type="text" name="" placeholder="Сообщение"
-                                class="messageToMeFormText"></textarea>
-                        </form>
+                <div class="row">
+                    <div class="col-4 offset-4 mt-5 mb-4">
+                        <div class="messageToMeTitle">оставте мне сообщение</div>
                     </div>
 
-                    <form action="#" class="messageToMeFormButton">
-                        <input type="submit" value="Отправить">
+                    <form action="#" class="messageToMeForm">
+                        <div class="row">
+                            <div class="col-4 offset-2">
+                                <div class="messageToMeForm">
+                                    <input class="messageToMeFormInfo w-100 p-2" type="text" name="" id=""
+                                        placeholder="Имя">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="messageToMeForm">
+                                    <input class="messageToMeFormInfo w-100 p-2" type="email" name="" id=""
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-8 offset-2">
+                                <textarea type="text" name="" placeholder="Сообщение"
+                                    class="messageToMeFormText w-100 p-2"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row pt-4 mb-4">
+                            <div class="col-2 offset-5">
+                                <input class="messageToMeFormButton px-3 py-2" type="submit" value="Отправить">
+                            </div>
+                        </div>
                     </form>
 
-                    <div class="messageToMeIcon">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+
+                    <div class="iconContainer mt-1">
+                        <a class="myContactsIconApp" href="#"></a>
+                        <a class="myContactsIconApp" href="#"></a>
+                        <a class="myContactsIconApp" href="#"></a>
+                        <a class="myContactsIconApp" href="#"></a>
+                        <a class="myContactsIconApp" href="#"></a>
+                        <a class="myContactsIconApp" href="#"></a>
                     </div>
+
                 </div>
             </div>
         </div>
-
         <!--Map-->
-        <div class="mapSite" id="map">map</div>
+        <div class="mapSite" id="map"></div>
 
         <!--Footer-->
-        <div class="footerText">Copyright © 2021 Даня Cat. Design by Web</div>
+        <div class="footerText text-center">Copyright © 2021 Даня Cat. Design by Web</div>
     </footer>
 
     <!--Script-->
     <script src="js/preloader.js"></script>
+    <script src="https://kit.fontawesome.com/aada28b0ad.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
