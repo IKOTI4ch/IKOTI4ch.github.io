@@ -126,9 +126,12 @@ a:visited{
 /*Header*/  
 header{
 	background: #2b3e51;
+	width: 100%;
 	height: 61px;
 	line-height: 61px;
 	color: #fff;
+	position: fixed;
+	z-index: 3;
 }
 
 header a:hover{
