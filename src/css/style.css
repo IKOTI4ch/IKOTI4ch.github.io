@@ -1,9 +1,14 @@
 body{
 	font-family: Arial, Helvetica, sans-serif;
+	min-width: 560px;
 }
 
 a {
 	text-decoration: none;
+}
+
+a:focus{
+	box-shadow: none!important;
 }
 
 a:visited{
@@ -20,9 +25,10 @@ a:visited{
 	transition: 1s all;
 
 	/*Preloader выключен*/
+	
 }
 
-.cat {
+.cat{
 	position: relative;
 	max-width: 20em;
 	max-height: 20em;
@@ -30,14 +36,15 @@ a:visited{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	transition: 1s all;
-  }
-  .cat::before {
+}
+
+.cat::before {
 	content: '';
 	display: block;
 	padding-bottom: 100%;
-  }
+}
   
-  .catHead, .catTail, .catBody {
+.catHead, .catTail, .catBody{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -45,8 +52,9 @@ a:visited{
 	bottom: 0;
 	-webkit-animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93) infinite;
 	animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93) infinite;
-  }
-  .catHead::before, .catTail::before, .catBody::before {
+}
+
+.catHead::before, .catTail::before, .catBody::before{
 	content: '';
 	position: absolute;
 	width: 50%;
@@ -54,9 +62,9 @@ a:visited{
 	background-size: 200%;
 	background-repeat: no-repeat;
 	background-image: url("../img/loader/loader.png");
-  }
+}
   
-  .catHead::before {
+.catHead::before{
 	top: 0;
 	right: 0;
 	background-position: 100% 0%;
@@ -64,13 +72,14 @@ a:visited{
 	transform-origin: 0% 100%;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
-  }
+}
   
-  .catTail {
+.catTail {
 	-webkit-animation-delay: .2s;
 	animation-delay: .2s;
-  }
-  .catTail::before {
+}
+
+.catTail::before{
 	left: 0;
 	bottom: 0;
 	background-position: 0% 100%;
@@ -78,30 +87,32 @@ a:visited{
 	transform-origin: 100% 0%;
 	-webkit-transform: rotate(-30deg);
 	transform: rotate(-30deg);
-  }
-  
-  .catBody {
+}
+
+.catBody{
 	-webkit-animation-delay: .1s;
 	animation-delay: .1s;
-  }
-  .catBody:nth-of-type(2) {
+}
+
+.catBody:nth-of-type(2){
 	-webkit-animation-delay: .2s;
 	animation-delay: .2s;
-  }
-  .catBody::before {
+}
+
+.catBody::before{
 	right: 0;
 	bottom: 0;
 	background-position: 100% 100%;
 	-webkit-transform-origin: 0% 0%;
 	transform-origin: 0% 0%;
-  }
+}
 
-  .preloader.done{
+.preloader.done{
 	  opacity: 0;
 	  visibility: hidden;
-  }
+ }
   
-  @-webkit-keyframes rotating {
+@-webkit-keyframes rotating{
 	from {
 	  -webkit-transform: rotate(720deg);
 		transform: rotate(720deg);
@@ -110,9 +121,9 @@ a:visited{
 	  -webkit-transform: none;
 		ransform: none;
 	}
-  }
+}
   
-  @keyframes rotating {
+@keyframes rotating{
 	from {
 	  -webkit-transform: rotate(720deg);
 		transform: rotate(720deg);
@@ -121,7 +132,15 @@ a:visited{
 	  -webkit-transform: none;
 		transform: none;
 	}
-  }
+}
+
+.itemLoadAll{
+	display: none;
+}
+
+.itemLoadAll.done{
+	display: block;
+}
 
 /*Header*/  
 header{
@@ -140,7 +159,11 @@ header a:hover{
 
 .logo{
 	font-size: 24px;
-	animation-duration: .1s;
+	animation-duration: .2s;
+}
+
+.logo:active{
+	font-size: 28px;
 }
 
 .navigation{
@@ -150,6 +173,10 @@ header a:hover{
 
 .navigation a{
 	position: relative;
+}
+
+.navigation a:active{
+	font-size: 20px;
 }
 
 .navigation a::after{
@@ -194,6 +221,15 @@ header a:hover{
 	animation-delay: 2.4s;
 }
 
+.dropdown-item{
+	color: #2B3E51;
+	font-size: 20px;
+}
+
+.dropdown-item:visited{
+	color: #2B3E51;
+}
+
 /*Greeting*/
 main{
 	width: 100%;
@@ -203,7 +239,9 @@ main{
 	background: url(../img/greeting/greeting.jpg) center no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: calc(100vh - 61px);
+	height: 100vh;
+	padding-top: 61px;
+	display: block!important;
 }
 
 .greetingText h1{
@@ -239,8 +277,24 @@ main{
 	border: 2px solid#2A3E51;	
 }
 
+.greetingButton a:active{
+	transform: scale(1.1);
+}
+
+@media (max-width: 768px){
+	.greetingText h4{
+		color: #fff;
+		text-shadow: 0 0 4px #22364A;
+	}
+
+	.greetingButton a{
+		color: #22364A;
+		border: 2px solid rgba( 34, 54, 74, .7);
+	}
+}
+
 /*About Me*/
-.titlePage{
+.titlePage h2{
 	font-size: 32px;
 	color: #1A2E43;
 	text-transform: uppercase;
@@ -257,6 +311,12 @@ main{
  	margin-top: 2%;
 }
 
+@media (max-width: 1400px) {
+	.titlePage h2{
+		font-size: 30px;
+	}
+}
+
 .aboutMeParagraph{
 	font-family: Calibri, sans-serif;
 	font-size: 18px;
@@ -270,6 +330,10 @@ main{
 	border: 2px solid #6F707F;
 	padding: 10px 11px;
 	border-radius: 10px;
+}
+
+.aboutMeButton:active{
+	transform: scale(1.1);
 }
 
 .aboutMeButton:visited{
@@ -294,7 +358,7 @@ main{
 }
 
 .abilityIcon{
-	font-size: 22px;
+	font-size: 28px;
 	color: #2C3E51;
 }
 	
@@ -307,18 +371,36 @@ main{
 	color: #38475A;
 }
 
+@media (max-width: 992px) {
+	.abilityTitle{
+		font-size: 17px;
+	}
+
+	.abilityText{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 768px) {
+	.abilityTitle{
+		font-size: 17px;
+	}
+}
+
 /*My Case*/
-.myCaseButton-next{
-	justify-content: flex-end;
+.myCase button{
 	opacity: 0;
 }
 
-.myCaseButton-prev{
-	justify-content: flex-start;
+.myCase button:hover{
 	opacity: 0;
 }
 
-.myCaseButton-prev:focus, .myCaseButton-next:focus{
+.myCase button:active{
+	opacity: 0;
+}
+
+.myCase button:focus{
 	opacity: 0;
 }
 
@@ -328,8 +410,8 @@ main{
 	text-transform: uppercase;
 }
 
-.conntactsText{
-	font-size: 16px;
+.contactsText{
+	font-size: 18px;
 	color: #38475A;
 }
 
@@ -352,6 +434,42 @@ main{
 	color: #fff;
 	background: #2A3E5D;
 	opacity: .9;
+}
+
+.contactsButton:active{
+	transform: scale(1.1);
+}
+
+@media (max-width: 1400px) {
+	.contactsTitle, .paragraphTitle{
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.contactsText{
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.paragraphText{
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.contactsButton{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.contactsButton{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }
 
 /*Calculator*/
@@ -440,9 +558,37 @@ main{
 	opacity: .9;
 }
 
+.calculatorButton:active{
+	transform: scale(1.1);
+}
+
+@media (max-width: 1400px) {
+	.calculatorTitle{
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.formTitle{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 992px) {
+	.calculatorFormContainer::after{
+		right: 4%;
+	}
+}
+
+@media (max-width: 768px) {
+	.calculatorFormContainer::after{
+		right: 6%;
+	}
+}
+
 /*Statistics*/
 .statistics{
-	background: url(../img/statistics/statistics.jpg);
+	background: url(../img/statistics/statistics.jpg) center;
 	padding-bottom: 5%;
 	max-height: 499px;
 	height: 100vh;
@@ -464,6 +610,42 @@ main{
 	font-size: 20px;
 	color: #283C4E;
 	text-transform: uppercase;
+}
+
+@media (max-width: 1400px) {
+	.statisticsNumbers{
+		font-size: 34px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.statisticsNumbers{
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.statisticsText{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.statisticsNumbers{
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.statisticsNumbers{
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.statisticsText{
+		font-size: 16px;
+	}
 }
 
 /*Reviews*/
@@ -491,6 +673,10 @@ main{
 	font-size: 16px;
 }
 
+.reviews .carousel-control-prev:hover, .reviews .carousel-control-next:hover{
+	color: #000;
+}
+
 /*My Contacts*/
 .myContacts{
 	background: url(../img/myContacts/myContacts.jpg) center no-repeat;
@@ -500,7 +686,7 @@ main{
 	color: #fff;
 }
 
-.myContacts .titlePage{
+.myContacts .titlePage h2{
 	padding-top: 5%;
 	color: #fff;
 }
@@ -551,6 +737,10 @@ main{
 	transition: .1s linear;
 }
 
+.messageToMeFormButton:active{
+	transform: scale(1.1);
+}
+
 .iconContainer{
 	margin: 0 auto;
 }
@@ -560,11 +750,62 @@ main{
 	width: 31px;
 	height: 31px;
 	margin-right: 3.4%;
-	/*background: rgba(67, 154, 186, .5);*/
+	background: rgba(67, 154, 186, .5);
 }
 
 .myContactsIconApp:last-child{
 	margin-right: 0.4%;
+}
+
+@media (max-width: 1400px) {
+	.messageToMeTitle{
+		font-size: 24px;
+	}
+
+	.myContactsIconApp{
+		margin-right: 4%;
+	}
+
+	.myContactsIconApp:last-child{
+		margin-right: 0.6%;
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.myContactsIconApp{
+		margin-right: 4.7%;
+	}
+}
+
+@media (max-width: 992px) {
+	.myContactsIconApp{
+		margin-right: 6.4%;
+	}
+
+	.myContactsIconApp:last-child{
+		margin-right: 0.9%;
+	}
+}
+
+@media (max-width: 768px) {
+	.myContactsIconApp{
+		margin-right: 8.5%;
+	}
+
+	.myContactsIconApp:last-child{
+		margin-right: 0.9%;
+	}
+}
+
+@media (max-width: 576px) {
+	.myContactsIconApp{
+		margin-right: 8.5%;
+	}
+
+	.myContactsIconApp:last-child{
+		margin-right: 1.2%;
+	}
 }
 
 /*Map*/
