@@ -1,6 +1,5 @@
 body{
 	font-family: Arial, Helvetica, sans-serif;
-	min-width: 560px;
 }
 
 a {
@@ -276,7 +275,7 @@ main{
 }
 
 .greetingButton a:hover{
-	color: #ccc;
+	color: #eee;
 	background-color: #2A3E51;
 	border: 2px solid#2A3E51;	
 }
@@ -287,13 +286,20 @@ main{
 
 @media (max-width: 768px){
 	.greetingText h4{
-		color: #fff;
+		color: #eee;
 		text-shadow: 0 0 4px #22364A;
 	}
 
 	.greetingButton a{
-		color: #22364A;
+		color: #2A3E51;
 		border: 2px solid rgba( 34, 54, 74, .7);
+	}
+}
+
+@media (max-width: 576px){
+	.greetingButton a{
+		background: rgba( 220, 220, 220, .4);
+		box-shadow: 0 0 4px rgba( 220, 220, 220, .2);
 	}
 }
 
@@ -590,6 +596,12 @@ main{
 	}
 }
 
+@media (max-width: 575px) {
+	.calculatorFormContainer::after{
+		right: 8%;
+	}
+}
+
 /*Statistics*/
 .statistics{
 	background: url(../img/statistics/statistics.jpg) center;
@@ -623,12 +635,6 @@ main{
 }
 
 @media (max-width: 1400px) {
-	.statisticsNumbers{
-		font-size: 30px;
-	}
-}
-
-@media (max-width: 1400px) {
 	.statisticsText{
 		font-size: 18px;
 	}
@@ -641,14 +647,14 @@ main{
 }
 
 @media (max-width: 1200px) {
-	.statisticsNumbers{
-		font-size: 28px;
+	.statisticsText{
+		font-size: 16px;
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 576px) {
 	.statisticsText{
-		font-size: 16px;
+		font-size: 20px;
 	}
 }
 
@@ -677,16 +683,11 @@ main{
 	font-size: 16px;
 }
 
-.reviews .carousel-control-prev:hover, .reviews .carousel-control-next:hover{
-	color: #000;
-}
-
 /*My Contacts*/
 .myContacts{
 	background: url(../img/myContacts/myContacts.jpg) center no-repeat;
 	background-size: cover;
-	max-height: 808px;
-	height: 100vh;
+	height: 100%;
 	color: #fff;
 }
 
@@ -745,71 +746,17 @@ main{
 	transform: scale(1.1);
 }
 
-.iconContainer{
-	margin: 0 auto;
-}
-
 .myContactsIconApp{
-	display: inline-block;
-	width: 31px;
-	height: 31px;
-	margin-right: 3.4%;
-	background: rgba(67, 154, 186, .5);
+	font-size: 32px;
+	transition: all .1s linear;	
 }
 
-.myContactsIconApp:last-child{
-	margin-right: 0.4%;
+.myContactsIconApp:hover{
+	color: #FFA000;
 }
 
-@media (max-width: 1400px) {
-	.messageToMeTitle{
-		font-size: 24px;
-	}
-
-	.myContactsIconApp{
-		margin-right: 4%;
-	}
-
-	.myContactsIconApp:last-child{
-		margin-right: 0.6%;
-	}
-}
-
-
-@media (max-width: 1199px) {
-	.myContactsIconApp{
-		margin-right: 4.7%;
-	}
-}
-
-@media (max-width: 991px) {
-	.myContactsIconApp{
-		margin-right: 6.4%;
-	}
-
-	.myContactsIconApp:last-child{
-		margin-right: 0.9%;
-	}
-}
-
-@media (max-width: 767px) {
-	.myContactsIconApp{
-		margin-right: 8.5%;
-	}
-
-	.myContactsIconApp:last-child{
-		margin-right: 0.9%;
-	}
-}
-
-@media (max-width: 575px) {
-	.myContactsIconApp{
-		margin-right: 8.5%;
-	}
-
-	.myContactsIconApp:last-child{
-		margin-right: 1.2%;
-	}
+.myContactsIconAll div:active{
+	transform: scale(1.1);
 }
 
 /*Map*/
