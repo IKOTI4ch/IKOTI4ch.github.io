@@ -139,19 +139,16 @@ a:visited{
 
 /*Modal Window*/
 .myModalStyle{
-	max-width: 60%;
-}
-
-.myModalHeight{
-	height: 45%;
+	max-width: 50%;
 }
 
 .modalHeader{
 	border-bottom: none;
 }
 
-.dialog{
-	min-height: 40%;
+.modalHeader .btn-close{
+	top: 25%;
+	right: 5%;
 }
 
 .myModalTitle{

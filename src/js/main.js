@@ -188,7 +188,7 @@ $(document).ready(function () {
 	//Modal Window Delay(START)--
 	setTimeout(function () {
 		$('#exampleModal').modal('show');
-	}, 30000); //Delay Modal(ms)
+	}, 1000); //Delay Modal(ms)
 	//Modal Window Delay(END)
 
 	//Images Dealy(START)--
