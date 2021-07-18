@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>CatMint</title>
@@ -23,35 +24,73 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-show='false' tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered myModalStyle">
+            <div class="modal-content">
+                <div class="row myModalHeight">
+                    <div class="col-6">
+                        <img src="#" alt="" data="">
+                    </div>
+                    <div class="col-6 mb-5">
+                        <div class="modal-header modalHeader">
+                            <h2 class="modal-title myModalTitle" id="exampleModalLabel">Уже уходите?</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body myModalBody">
+                            Мы приготовили для Вас специальное предложение!
+
+                            <form>
+                                <div class="">
+                                    <input class="modalButtonMail my-3 p-2" type="email" class="form-control"
+                                        id="recipient-name" placeholder="Ваш E-mail">
+                                    <input class="modalButtonSubmit py-2" type="submit" name="" id=""
+                                        placeholder="Отправить">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Header-->
     <header id="itemLoadHeader" class="itemLoadAll">
         <div class="container">
             <div class="row">
                 <div class="logo col-xl-2 col-lg-2 col-md-4 col-sm-4 col-5 offset-xl-1 text-center">
-                    <div class="animate__animated animate__jackInTheBox"><a class="" href="#">Даня Cat</a></div>
+                    <div class="animate__animated animate__jackInTheBox anchor"><a href="#logo">Даня Cat</a></div>
                 </div>
 
-                <div
+                <nav
                     class="navigation col-xl-6 col-lg-8 offset-xxl-2 offset-xl-2 offset-lg-2 justify-content-between d-none d-lg-flex">
-                    <div class="animate__animated animate__bounceInDown animate__delay0_4s"><a href="#">обо
+                    <div class="animate__animated animate__bounceInDown animate__delay0_4s anchor"><a
+                            href="#aboutMe">обо
                             мне</a>
                     </div>
-                    <div class="animate__animated animate__bounceInDown animate__delay0_8s"><a href="#">услуги</a>
+                    <div class="animate__animated animate__bounceInDown animate__delay0_8s anchor"><a
+                            href="#whatCan">услуги</a>
                     </div>
 
-                    <div class="animate__animated animate__bounceInDown animate__delay1_2s"><a href="#">кейсы</a>
+                    <div class="animate__animated animate__bounceInDown animate__delay1_2s anchor"><a
+                            href="#myCase">кейсы</a>
                     </div>
 
-                    <div class="animate__animated animate__bounceInDown animate__delay1_6s"><a href="#">прайс</a>
+                    <div class="animate__animated animate__bounceInDown animate__delay1_6s anchor"><a
+                            href="#calculator">прайс</a>
                     </div>
 
-                    <div class="animate__animated animate__bounceInDown animate__delay2s"><a href="#">отзывы</a>
+                    <div class="animate__animated animate__bounceInDown animate__delay2s anchor"><a
+                            href="#reviews">отзывы</a>
                     </div>
 
-                    <div class="animate__animated animate__bounceInDown animate__delay2_4s"><a href="#">контакты</a>
+                    <div class="animate__animated animate__bounceInDown animate__delay2_4s anchor"><a
+                            href="#myContacts">контакты</a>
                     </div>
-                </div>
+                </nav>
 
+                <!--DropDown-->
                 <div
                     class="dropdown d-block d-lg-none col-md-4 col-sm-5 col-5 offset-md-3 offset-sm-2 offset-2 text-end pe-sm-0 pe-4">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
@@ -60,12 +99,12 @@
                     </a>
 
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">обо мне</a></li>
-                        <li><a class="dropdown-item" href="#">услуги</a></li>
-                        <li><a class="dropdown-item" href="#">кейсы</a></li>
-                        <li><a class="dropdown-item" href="#">прайс</a></li>
-                        <li><a class="dropdown-item" href="#">отзывы</a></li>
-                        <li><a class="dropdown-item" href="#">контакты</a></li>
+                        <li><a class="dropdown-item" href="#aboutMe">обо мне</a></li>
+                        <li><a class="dropdown-item" href="#whatCan">услуги</a></li>
+                        <li><a class="dropdown-item" href="#myCase">кейсы</a></li>
+                        <li><a class="dropdown-item" href="#calculator">прайс</a></li>
+                        <li><a class="dropdown-item" href="#reviews">отзывы</a></li>
+                        <li><a class="dropdown-item" href="#myContacts">контакты</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,7 +114,7 @@
     </header>
 
     <!--Greeting-->
-    <main class="1">
+    <main class="section" id="logo">
         <div class="greeting">
             <div id="itemLoadMain" class="container itemLoadAll h-100">
                 <div class="row align-items-center h-100 text-center">
@@ -87,8 +126,8 @@
                             </div>
 
                             <div class="greetingButton">
-                                <a class="btn px-2 py-1" href="#">Обо мне</a>
-                                <a class="btn px-2 py-1" href="#">Мои работы</a>
+                                <a class="btn px-2 py-1" href="#aboutMe">Обо мне</a>
+                                <a class="btn px-2 py-1" href="#myCase">Мои работы</a>
                             </div>
                         </div>
                     </div>
@@ -98,13 +137,13 @@
     </main>
 
     <!--About Me-->
-    <section>
+    <section class="section" id="aboutMe">
         <div class="container text-center">
             <div class="titlePage">
                 <h2>обо мне</h2>
             </div>
 
-            <img class="m-5" src="img/aboutMe/aboutMe.jpg" alt="">
+            <img class="m-5" src="#" data="img/aboutMe/aboutMe.jpg" alt="">
 
             <div class="row mb-4">
                 <div class="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1 text-start">
@@ -135,16 +174,16 @@
     </section>
 
     <!--What I Can-->
-    <section>
-        <div class="whatCan mb-4 mb-sm-0 pb-5 pb-sm-0">
+    <section class="section" id="whatCan">
+        <div class="whatCan mb-4 mb-sm-0 position-relative">
             <div class="container text-center">
                 <div class="titlePage">
                     <h2>что я умею</h2>
                 </div>
 
-                <div class="row mt-5 pt-md-5 pt-0">
+                <div class="row mt-5 pt-md-5 pt-0 elements-whatCan-animate">
                     <div class="col-md-3 col-6 mb-md-0 mb-4">
-                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_4s">
+                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0">
                             <div class="abilityIcon"><i class="fas fa-laptop"></i></div>
                             <div class="abilityTitle my-3">Веб-дизайн</div>
                             <div class="abilityText">Lorem ipsum dolor sit amet placerat
@@ -154,7 +193,7 @@
                     </div>
 
                     <div class="col-md-3 col-6 mb-md-0 mb-4">
-                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_8s">
+                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_4s">
                             <div class="abilityIcon"><i class="fas fa-code fasFaCode"></i></div>
                             <div class="abilityTitle my-3">Разработка</div>
                             <div class="abilityText">Lorem ipsum dolor sit amet placerat
@@ -164,7 +203,7 @@
                     </div>
 
                     <div class="col-md-3 col-6">
-                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_2s">
+                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay0_8s">
                             <div class="abilityIcon"><i class="fas fa-rocket"></i></div>
                             <div class="abilityTitle my-3">СЕО-Оптимизация</div>
                             <div class="abilityText">Lorem ipsum dolor sit amet placerat
@@ -174,7 +213,7 @@
                     </div>
 
                     <div class="col-md-3 col-6">
-                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_6s">
+                        <div class="abilityItem animate__animated animate__lightSpeedInLeft animate__delay1_2s">
                             <div class="abilityIcon"><i class="fas fa-bullhorn"></i></div>
                             <div class="abilityTitle my-3">Маркетинг</div>
                             <div class="abilityText">Lorem ipsum dolor sit amet placerat
@@ -184,10 +223,14 @@
                     </div>
                 </div>
             </div>
+
+            <div class="visible elements-whatCan-animation"></div>
+        </div>
+
     </section>
 
     <!--My Case-->
-    <section>
+    <section class="section" id="myCase">
         <div class="myCase pt-4 pt-sm-0">
             <div class="container">
                 <div class="titlePage text-center mb-4">
@@ -203,14 +246,17 @@
                 <div class="row mt-5">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/myCase/myCase.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-item active popup-gallery">
+                                <a href="img/myCase/myCase.jpg" title="http://www.somedomain.com"><img src="#"
+                                        data="img/myCase/myCase.jpg" class="d-block w-100" alt="..."></a>
                             </div>
-                            <div class="carousel-item">
-                                <img src="img/myCase/myCase.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-item popup-gallery">
+                                <a href="img/myCase/myCase.jpg" title="http://www.somedomain.com"><img src="#"
+                                        data="img/myCase/myCase.jpg" class="d-block w-100" alt="..."></a>
                             </div>
-                            <div class="carousel-item">
-                                <img src="img/myCase/myCase.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-item popup-gallery">
+                                <a href="img/myCase/myCase.jpg" title="http://www.somedomain.com"><img src="#"
+                                        data="img/myCase/myCase.jpg" class="d-block w-100" alt="..."></a>
                             </div>
                         </div>
                         <button class="myCaseButton-prev carousel-control-prev" type="button"
@@ -267,7 +313,7 @@
     </section>
 
     <!--Calculator-->
-    <section>
+    <section class="section" id="calculator">
         <div class="calculator pt-5">
             <div class="container pb-3">
                 <div class="row">
@@ -284,13 +330,12 @@
                             </div>
                             <div class="row mb-5">
                                 <div class="calculatorFormContainer">
-                                    <select name="#" id="#" class="calculatorFormSelect">
-                                        <option selected disabled class="formLable">Выберите пункт...</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-                                        <option value="">5</option>
+                                    <select name="#" id="formTypeSite" class="calculatorFormSelect">
+                                        <option value="0" selected disabled class="formLable">Выберите пункт...</option>
+                                        <option value="1000" data-term-days="1">Сайт-визитка</option>
+                                        <option value="2000" data-term-days="2">Корпоративный</option>
+                                        <option value="3000" data-term-days="3">Интернет-магазин</option>
+                                        <option value="4000" data-term-days="4">Landing page</option>
                                     </select>
                                 </div>
                             </div>
@@ -300,13 +345,11 @@
                             </div>
                             <div class="row mb-5">
                                 <div class="calculatorFormContainer">
-                                    <select name="#" id="#" class="calculatorFormSelect">
-                                        <option selected disabled class="formLable">Выберите пункт...</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-                                        <option value="">5</option>
+                                    <select name="#" id="formTypeDesign" class="calculatorFormSelect">
+                                        <option value="0" selected disabled class="formLable">Выберите пункт...</option>
+                                        <option value="1000" data-term-days="1">Жесткий</option>
+                                        <option value="2000" data-term-days="2">Гибкий</option>
+                                        <option value="3000" data-term-days="3">Комбинированный</option>
                                     </select>
                                 </div>
                             </div>
@@ -316,13 +359,12 @@
                             </div>
                             <div class="row mb-5">
                                 <div class="calculatorFormContainer">
-                                    <select name="#" id="#" class="calculatorFormSelect">
-                                        <option selected disabled class="formLable">Выберите пункт...</option>
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-                                        <option value="">5</option>
+                                    <select name="#" id="formTypeAdaptive" class="calculatorFormSelect">
+                                        <option value="0" selected disabled class="formLable">Выберите пункт...</option>
+                                        <option value="1000" data-term-days="1">Адаптивный</option>
+                                        <option value="2000" data-term-days="2">Резиновый</option>
+                                        <option value="3000" data-term-days="3">Отзывчивый</option>
+                                        <option value="4000" data-term-days="4">Perfect pixel</option>
                                     </select>
                                 </div>
                             </div>
@@ -331,18 +373,21 @@
                         <div class="termCost">
                             <div class="row pt-4">
                                 <div class="termCostText col-2">Сроки</div>
-                                <div class="termCostNumber col-md-1 col-2 offset-md-9 offset-8 text-end">0</div>
+                                <div class="termCostNumber col-md-1 col-2 offset-md-9 offset-8 text-end"
+                                    id="calculatorNumberTerm">0</div>
                             </div>
                             <div class="row">
                                 <div class="termCostText col-2">Стоимость</div>
-                                <div class="termCostNumber col-md-1 col-2 offset-md-9 offset-8 text-end">0</div>
+                                <div class="termCostNumber col-md-1 col-2 offset-md-9 offset-8 text-end"
+                                    id="calculatorNumberCost">0</div>
                             </div>
                         </div>
                     </div>
 
                     <div class="row mb-4">
                         <div class="col text-center">
-                            <input class="calculatorButton px-3 py-2" type="submit" value="Оставить заявку">
+                            <input class="calculatorButton px-3 py-2" type="submit" id="calculatorButtonSubmit"
+                                value="Оставить заявку">
                         </div>
                     </div>
                 </div>
@@ -352,46 +397,46 @@
 
     <!--Statistics-->
     <section>
-        <div class="statistics mt-5">
+        <div class="statistics mt-5 position-relative">
             <div class="container text-center">
                 <div class="titlePage mb-5">
                     <h2>немного статистики</h2>
                 </div>
 
-                <div class="row pt-5 d-sm-flex d-none">
+                <div class="row pt-5 d-sm-flex d-none elements-statistics-animate">
                     <div class="col-3">
-                        <div class="statisticsItem">
+                        <div class="statisticsItem animate__animated animate__fadeInBottomLeft animate__delay0">
                             <div class="statisticsIcon mb-3"><i class="far fa-smile"></i></div>
-                            <div class="statisticsNumbers mb-2">120</div>
+                            <div id="outNum-1" class="statisticsNumbers mb-2">0</div>
                             <div class="statisticsText">счастливых клиентов</div>
                         </div>
                     </div>
 
                     <div class="col-3">
-                        <div class="statisticsItem">
+                        <div class="statisticsItem animate__animated animate__fadeInBottomLeft animate__delay0_4s">
                             <div class="statisticsIcon mb-3"><i class="fas fa-code"></i></div>
-                            <div class="statisticsNumbers mb-2">4.600</div>
+                            <div id="outNum-2" class="statisticsNumbers mb-2">0</div>
                             <div class="statisticsText">часов работы</div>
                         </div>
                     </div>
 
                     <div class="col-3">
-                        <div class="statisticsItem">
+                        <div class="statisticsItem animate__animated animate__fadeInBottomLeft animate__delay0_8s">
                             <div class="statisticsIcon mb-3"><i class="far fa-check-square"></i></div>
-                            <div class="statisticsNumbers mb-2">340</div>
+                            <div id="outNum-3" class="statisticsNumbers mb-2">0</div>
                             <div class="statisticsText">проектов завершено</div>
                         </div>
                     </div>
 
                     <div class="col-3">
-                        <div class="statisticsItem">
+                        <div class="statisticsItem animate__animated animate__fadeInBottomLeft animate__delay1_2s">
                             <div class="statisticsIcon mb-3"><i class="fas fa-trophy"></i></div>
-                            <div class="statisticsNumbers mb-2">23</div>
+                            <div id="outNum-4" class="statisticsNumbers mb-2">0</div>
                             <div class="statisticsText">наград получено</div>
                         </div>
                     </div>
                 </div>
-
+                <!--Carousel-->
                 <div class="row d-sm-none d-block pt-5">
                     <div id="carouselExampleControlsNoTouching" class="carousel carousel-dark slide"
                         data-bs-interval="false">
@@ -441,11 +486,13 @@
                     </div>
                 </div>
             </div>
+
+            <div class="visible elements-statistics-animation"></div>
         </div>
     </section>
 
     <!--Reviews-->
-    <section>
+    <section class="section" id="reviews">
         <div class="reviews">
             <div class="container text-center mb-5">
                 <div class="titlePage mb-5">
@@ -466,7 +513,7 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <img src="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
+                                    <img src="#" data="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
                                     <div class="carousel-caption">
                                         <div class="row">
                                             <div class="col-8 offset-2 reviewsText">
@@ -486,7 +533,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
+                                    <img src="#" data="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
                                     <div class="carousel-caption">
                                         <div class="row">
                                             <div class="col-8 offset-2 reviewsText">
@@ -504,7 +551,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
+                                    <img src="#" data="img/reviews/reviews.jpg" class="text-center mb-4" alt="...">
                                     <div class="carousel-caption">
                                         <div class="row">
                                             <div class="col-8 offset-2 reviewsText">
@@ -540,7 +587,7 @@
     </section>
 
     <!--My Contacts-->
-    <footer>
+    <footer class="section" id="myContacts">
         <div class="myContacts">
             <div class="container text-center">
                 <div class="titlePage my-sm-4 my-3">
@@ -618,7 +665,7 @@
                     </form>
 
                     <div
-                        class="row mt-sm-5 mt-4justify-content-lg-center justify-content-evenly myContactsIconAll pb-4">
+                        class="row mt-sm-5 mt-4 pt-lg-4 pt-0 justify-content-lg-center justify-content-evenly myContactsIconAll pb-4">
                         <div class="col-1"><a class="myContactsIconApp" href="#"><i class="fab fa-facebook-f"></i></a>
                         </div>
 
@@ -650,8 +697,10 @@
     <!--Script-->
     <script src="js/preloader.js"></script>
     <script src="https://kit.fontawesome.com/aada28b0ad.js" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
