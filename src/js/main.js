@@ -28,7 +28,9 @@ $(document).ready(function () {
 
 	//Observer 'What I Can'START)--
 	function observerWhatCan() {
-		let options = { threshold: [0.25] };
+		let options = {
+			threshold: [1],
+		};
 		let observer = new IntersectionObserver(onEntryWhatCan, options);
 		let elements = $('.elements-whatCan-animation');
 
@@ -52,7 +54,9 @@ $(document).ready(function () {
 
 	//Observer 'Statistics'(START)--
 	function observerStatistics() {
-		let options = { threshold: [0.25] };
+		let options = {
+			threshold: [1],
+		};
 		let observer = new IntersectionObserver(onEntryStatistics, options);
 		let elements = $('.elements-statistics-animation');
 
@@ -188,7 +192,7 @@ $(document).ready(function () {
 	//Modal Window Delay(START)--
 	setTimeout(function () {
 		$('#exampleModal').modal('show');
-	}, 1000); //Delay Modal(ms)
+	}, 30000); //Delay Modal(ms)
 	//Modal Window Delay(END)
 
 	//Images Dealy(START)--

@@ -144,11 +144,12 @@ a:visited{
 
 .modalHeader{
 	border-bottom: none;
+	position: relative;
 }
 
 .modalHeader .btn-close{
 	top: 25%;
-	right: 5%;
+	right: 4.5%;
 }
 
 .myModalTitle{
@@ -171,6 +172,7 @@ a:visited{
 
 .modalButtonMail:focus{
 	border: 2px solid #2B3E51;
+	transition: .1s linear;
 }
 
 .modalButtonSubmit{
@@ -179,8 +181,43 @@ a:visited{
 	font-weight: 700;
 	background: #2B3E51;
 	border: none;
-	width: 40%;
+	width: 130px;
 	border-radius: 3px;
+}
+
+.modalButtonSubmit:hover{
+	box-shadow: 0 0 10px #FFA000;
+	transition: .1s linear;
+}
+
+.modalButtonSubmit:active{
+	font-size: 22px;
+}
+
+@media (min-width: 992px){
+	.modalHeader{
+		position: static;
+	}
+
+	.modal-content{
+		position: relative;
+	}
+
+	.modalHeader .btn-close{
+		top: 4%;
+		right: 4.5%;
+	}
+}
+
+@media (min-width: 1200px){
+	.modalHeader{
+		position: relative;
+	}
+
+	.modalHeader .btn-close{
+		top: 25%;
+		right: 4.5%;
+	}
 }
 
 /*Item Load*/
@@ -408,6 +445,10 @@ main{
 	border: 2px solid #6F707F;
 	padding: 10px 11px;
 	border-radius: 10px;
+}
+
+.aboutMeButton:link{
+	color: #6F707F;
 }
 
 .aboutMeButton:active{
