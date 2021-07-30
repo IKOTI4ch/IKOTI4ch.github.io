@@ -1,0 +1,1036 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:focus {
+  box-shadow: none !important;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.preloader {
+  width: 100%;
+  height: 100%;
+  background: #e6dcdc;
+  position: fixed;
+  z-index: 99;
+  overflow: hidden;
+  transition: 1s all;
+
+  /*Preloader выключен*/
+}
+
+.cat {
+  position: relative;
+  max-width: 20em;
+  max-height: 20em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s all;
+}
+
+.cat::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.catHead,
+.catTail,
+.catBody {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93)
+    infinite;
+  animation: rotating 2.79s cubic-bezier(0.65, 0.54, 0.12, 0.93) infinite;
+}
+
+.catHead::before,
+.catTail::before,
+.catBody::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-image: url("../img/loader/loader.png");
+}
+
+.catHead::before {
+  top: 0;
+  right: 0;
+  background-position: 100% 0%;
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.catTail {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.catTail::before {
+  left: 0;
+  bottom: 0;
+  background-position: 0% 100%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.catBody {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.catBody:nth-of-type(2) {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.catBody::before {
+  right: 0;
+  bottom: 0;
+  background-position: 100% 100%;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+}
+
+.preloader.done {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+  to {
+    -webkit-transform: none;
+    ransform: none;
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(720deg);
+    transform: rotate(720deg);
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/*Modal Window*/
+.myModalStyle {
+  max-width: 670px;
+}
+
+.modalHeaderReviews,
+.modalHeaderCheck {
+  border-bottom: none;
+  position: relative;
+}
+
+.modalHeaderReviews .btn-close {
+  top: 20%;
+  right: 3%;
+}
+
+.modalHeaderCheck .btn-close {
+  top: 5%;
+  right: 3%;
+}
+
+.myModalTitle {
+  color: #262626;
+  font-weight: 700;
+}
+
+.myModalBody {
+  color: #262626;
+  font-size: 24px;
+}
+
+.modalMail {
+  background: #e7e7e7;
+  border: 1px solid #2b3e51;
+  outline: none;
+  box-shadow: 0 0 2px #2b3e51;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.1s linear;
+}
+
+.modalMail:focus,
+.modalText:focus {
+  box-shadow: 0 0 10px #2b3e51;
+  border: 1px solid #ffa000;
+}
+
+.modalButtonSubmit {
+  color: #ffa000;
+  font-size: 20px;
+  font-weight: 700;
+  background: #2b3e51;
+  border: none;
+  width: 130px;
+  border-radius: 3px;
+  transition: 0.1s linear;
+}
+
+.modalButtonSubmit:hover {
+  border: 1px solid #fff;
+}
+
+.modalButtonSubmit:active {
+  font-size: 22px;
+}
+
+.modalText {
+  border: 1px solid #2b3e51;
+  background: #e7e7e7;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+  transition: 0.1s linear;
+}
+
+@media (max-width: 1200px) {
+  .myModalStyle {
+    max-width: 640px;
+  }
+
+  .modalHeaderCheck .btn-close {
+    position: relative;
+    top: -275%;
+    right: 3%;
+  }
+}
+
+@media (max-width: 992px) {
+  .modalHeaderCheck .btn-close {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .myModalStyle {
+    max-width: 530px;
+  }
+}
+
+@media (max-width: 576px) {
+  .myModalStyle {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modalHeaderReviews {
+    position: relative;
+  }
+
+  .modalHeaderReviews .btn-close {
+    top: 20%;
+    right: 2.5%;
+  }
+}
+
+@media (min-width: 992px) {
+  .modalHeaderReviews {
+    position: static;
+  }
+
+  .modal-content {
+    position: relative;
+  }
+
+  .modalHeaderReviews .btn-close {
+    top: 4%;
+    right: 4.5%;
+  }
+}
+/*Check*/
+.check {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffa000;
+  transition: all 0.1s linear;
+}
+
+.checkIcon {
+  color: #2b3e51;
+  font-size: 30px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+/*Modal Calculator*/
+.modalCalc {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #00b6af;
+  transition: all 0.1s linear;
+}
+
+.modalCalcIcon {
+  color: #2b3e51;
+  font-size: 30px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modalTextCalc {
+  resize: none;
+  width: 100%;
+}
+
+.modalCalcAnswer {
+  background: #e7e7e7;
+  border: 1px solid #2b3e51;
+  box-shadow: 0 0 2px #2b3e51;
+  border-radius: 5px;
+}
+
+.modalCalcAnswerText {
+  outline: none;
+  border: none;
+  background: #e7e7e7;
+}
+
+/*Check All*/
+.checkAll {
+  bottom: 4%;
+  right: 2%;
+  z-index: 2;
+}
+
+/*Header*/
+header {
+  background: #2b3e51;
+  width: 100%;
+  height: 61px;
+  line-height: 61px;
+  color: #fff;
+  position: fixed;
+  z-index: 3;
+}
+
+header a:hover {
+  color: #ffa000;
+}
+
+.logo {
+  font-size: 24px;
+  animation-duration: 0.2s;
+}
+
+.logo:active {
+  font-size: 28px;
+}
+
+.navigation {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navigation a {
+  position: relative;
+}
+
+.navigation a:active {
+  font-size: 18px;
+}
+
+.navigation a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffa000;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  transition: 0.1s linear;
+}
+
+nav .active a {
+  color: #ffa000;
+  font-size: 18px;
+}
+
+nav .active a::after {
+  opacity: 1;
+}
+
+.logo .active a {
+  color: #ffa000;
+}
+
+.navigation a:hover::after {
+  opacity: 1;
+}
+
+.animate__delay0_4s {
+  animation-delay: 0.4s;
+}
+
+.animate__delay0_8s {
+  animation-delay: 0.8s;
+}
+
+.animate__delay1_2s {
+  animation-delay: 1.2s;
+}
+
+.animate__delay1_6s {
+  animation-delay: 1.6s;
+}
+
+.animate__delay2s {
+  animation-delay: 2s;
+}
+
+.animate__delay2_4s {
+  animation-delay: 2.4s;
+}
+
+.dropdown-item {
+  color: #2b3e51;
+  font-size: 20px;
+}
+
+.dropdown-item:visited {
+  color: #2b3e51;
+}
+
+/*Greeting*/
+main {
+  width: 100%;
+  height: 100%;
+}
+.greeting {
+  background: url(../img/greeting/greeting.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 61px;
+  display: block !important;
+}
+
+.greetingText h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #5674a9;
+}
+
+.greetingText h4 {
+  font-size: 20px;
+  color: #868f9d;
+}
+
+.greetingButton {
+  margin-top: 50px;
+}
+
+.greetingButton a {
+  color: #d7d7d8;
+  font-size: 18px;
+  border: 2px solid #697783;
+  border-radius: 10px;
+  transition: 0.1s linear;
+}
+
+.greetingButton a:last-child {
+  margin-left: 3%;
+}
+
+.greetingButton a:hover {
+  color: #eee;
+  background-color: #2a3e51;
+  border: 2px solid#2A3E51;
+}
+
+.greetingButton a:active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .greetingText h4 {
+    color: #eee;
+    text-shadow: 0 0 4px #22364a;
+  }
+}
+
+/*About Me*/
+.titlePage h2 {
+  font-size: 32px;
+  color: #1a2e43;
+  text-transform: uppercase;
+  padding-top: 8%;
+}
+
+.titlePage::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #eb7800;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.aboutMeImg {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1400px) {
+  .titlePage h2 {
+    font-size: 30px;
+  }
+}
+
+.aboutMeParagraph {
+  font-family: Calibri, sans-serif;
+  font-size: 18px;
+  color: #38485a;
+}
+
+.aboutMeButton {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16px;
+  color: #6f707f;
+  border: 2px solid #6f707f;
+  padding: 10px 11px;
+  border-radius: 10px;
+}
+
+.aboutMeButton:link {
+  color: #6f707f;
+}
+
+.aboutMeButton:active {
+  transform: scale(1.1);
+}
+
+.aboutMeButton:visited {
+  color: #6f7180;
+}
+
+.aboutMeButton:hover {
+  color: #fff;
+  background: #2a3e51;
+  border: 2px solid #2a3e51;
+}
+
+.aboutMeButton {
+  transition: all 0.1s linear;
+}
+
+/*What I Can*/
+.whatCan {
+  height: 523px;
+  background: url(../img/whatCan/whatCan.jpg) bottom no-repeat;
+  background-size: cover;
+}
+
+.whatCanTitle h2 {
+  color: #5674a8;
+}
+
+.abilityIcon {
+  font-size: 28px;
+  color: #5674a8;
+}
+
+.abilityTitle {
+  font-size: 22px;
+  color: #e87700;
+}
+
+.abilityText {
+  font-size: 18px;
+  color: #5674a8;
+}
+
+.visible {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+
+@media (max-width: 992px) {
+  .abilityTitle {
+    font-size: 17px;
+  }
+
+  .abilityText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .abilityTitle {
+    font-size: 17px;
+  }
+}
+
+/*My Case*/
+.myCase button {
+  opacity: 0;
+}
+
+.myCase button:hover {
+  opacity: 0;
+}
+
+.myCase button:active {
+  opacity: 0;
+}
+
+.myCase button:focus {
+  opacity: 0;
+}
+
+.contactsTitle,
+.paragraphTitle {
+  font-size: 22px;
+  color: #2f4154;
+  text-transform: uppercase;
+}
+
+.contactsText {
+  font-size: 18px;
+  color: #38475a;
+}
+
+.paragraphText {
+  font-size: 18px;
+  color: #38475a;
+}
+
+.contactsButton {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #00b6af;
+  border-radius: 10px;
+  transition: 0.1s linear;
+}
+
+.contactsButton:hover {
+  color: #fff;
+  background: #2a3e5d;
+  opacity: 0.9;
+}
+
+.contactsButton:active {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1400px) {
+  .contactsTitle,
+  .paragraphTitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contactsText {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .paragraphText {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .contactsButton {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contactsButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/*Calculator*/
+.calculator .container {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+.calculatorTitle {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 42px;
+  color: #102031;
+}
+
+.formTitle {
+  font-size: 30px;
+  color: #102031;
+  text-transform: uppercase;
+}
+
+.calculatorFormSelect {
+  font-size: 16px;
+  width: 100%;
+  height: 57px;
+  background-color: #eeeeee;
+  padding: 10px 45px 10px 21px;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+}
+
+.calculatorFormSelect {
+  border-radius: 10px;
+}
+
+.calculatorFormSelect:focus {
+  border: 1px solid #2a3e51;
+  box-shadow: 0 0 1px #2a3e51;
+  color: #000;
+}
+
+.calculatorIcon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 45%;
+  right: -2%;
+  transform: translateY(-50%);
+  display: none;
+  color: red;
+}
+
+.calculatorIcon.done {
+  display: block;
+}
+
+.calculatorFormContainer::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 1px solid #282828;
+  border-width: 0 2px 2px 0;
+  width: 9px;
+  height: 9px;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%) rotate(45deg);
+  pointer-events: none;
+}
+
+.termCost {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.termCost::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #d2d2d2;
+  margin: 0 auto;
+}
+
+.calculatorButton {
+  font-size: 20px;
+  color: #fff;
+  background: #00b6af;
+  border: 1px solid #00b6af;
+  border-radius: 10px;
+  transition: all 0.1s linear;
+}
+
+.calculatorButton:hover {
+  color: #fff;
+  background: #2a3e5d;
+  border: 1px solid #2a3e5d;
+  opacity: 0.9;
+}
+
+.calculatorButton:active {
+  transform: scale(1.1);
+}
+
+.calculatorRowRequired {
+  height: 24px;
+}
+
+.calculatorTextRequired {
+  color: #ff2d2d;
+  font-weight: 700;
+  display: none;
+}
+
+.calculatorTextRequired.done {
+  display: block;
+}
+
+@media (max-width: 1400px) {
+  .calculatorTitle {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .formTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 992px) {
+  .calculatorFormContainer::after {
+    right: 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  .calculatorFormContainer::after {
+    right: 6%;
+  }
+}
+
+@media (max-width: 575px) {
+  .calculatorFormContainer::after {
+    right: 8%;
+  }
+}
+
+/*Statistics*/
+.statistics {
+  background: url(../img/statistics/statistics.jpg) center no-repeat;
+  background-size: cover;
+  padding-bottom: 5%;
+  max-height: 499px;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.statisticsTitle h2 {
+  color: #5674a8;
+}
+
+.statisticsIcon {
+  font-size: 36px;
+  color: #ea7e00;
+}
+
+.statisticsNumbers {
+  font-size: 32px;
+  font-weight: 700;
+  color: #5674a8;
+}
+
+.statisticsText {
+  font-size: 20px;
+  color: #5674a8;
+  text-transform: uppercase;
+}
+
+.elements-statistics-animate {
+  display: none;
+}
+
+.elements-statistics-animate.elements-statistics-animate-done {
+  display: flex;
+}
+
+@media (max-width: 1400px) {
+  .statisticsNumbers {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .statisticsText {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .statisticsNumbers {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .statisticsText {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .statisticsText {
+    font-size: 20px;
+  }
+}
+
+/*Reviews*/
+.reviews .carousel-caption {
+  position: static !important;
+  padding-top: 0;
+}
+
+.reviews .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.reviews .carousel-dark .carousel-indicators button {
+  background-color: #808080;
+}
+
+.reviews .carousel-dark .carousel-indicators .active {
+  background-color: #e46500;
+}
+
+.reviewsText {
+  font-family: Calibri, sans-serif;
+  font-size: 16px;
+}
+
+/*My Contacts*/
+.myContacts {
+  background: url(../img/myContacts/myContacts.jpg) right no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: #fff;
+}
+
+.myContacts .titlePage h2 {
+  padding-top: 5%;
+  color: #fff;
+}
+
+.myContactsIcon {
+  font-size: 26px;
+}
+
+.messageToMeTitle {
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.messageToMeForm {
+  opacity: 0.9;
+}
+
+.messageToMeFormInfo,
+.messageToMeFormText {
+  border: 2px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+
+.messageToMeFormInfo:focus,
+.messageToMeFormText:focus {
+  border: 2px solid#EB7800;
+  transition: 0.1s linear;
+}
+
+.messageToMeFormTextWrap {
+  height: 120px;
+  border-radius: 10px;
+}
+
+.messageToMeFormText {
+  height: 120px;
+  resize: none;
+}
+
+.messageToMeFormButton {
+  font-size: 20px;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.messageToMeFormButton:hover {
+  color: #222;
+  background-color: #ccc;
+  border-color: #222;
+  transition: 0.1s linear;
+}
+
+.messageToMeFormButton:active {
+  transform: scale(1.1);
+}
+
+.myContactsIconApp {
+  font-size: 32px;
+  transition: all 0.1s linear;
+}
+
+.myContactsIconApp:hover {
+  color: #ffa000;
+}
+
+.myContactsIconAll div:active {
+  transform: scale(1.1);
+}
+
+/*Map*/
+.mapSite {
+  width: 100%;
+  height: 400px;
+}
+
+/*Footer*/
+.footerText {
+  color: #fff;
+  height: 92px;
+  line-height: 92px;
+  font-size: 14px;
+  background: #2c3e51;
+}
